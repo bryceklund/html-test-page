@@ -16,7 +16,8 @@
     <br />
 
 <script type="text/javascript" id="aoform-script-fe55a044-8d9a-428b-8d9a-d60191de7c52:d-0001">
-    const prom = new Promise(!function (o, t, e, a) {
+    const prom = new Promise((res, rej) => {
+        !function (o, t, e, a) {
         o._aoForms = o._aoForms || [],
         o._aoForms.push(a);
         var n = function () {
@@ -46,7 +47,7 @@
         isTemp: false,
         noStyle: false,
         prefill: false
-    }));
+    })});
     prom.then(() => {
         console.log('form loaded')
     })
